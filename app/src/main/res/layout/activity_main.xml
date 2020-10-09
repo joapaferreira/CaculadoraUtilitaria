@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Calc"
+        android:layout_width="299dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Calculadora"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="322dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="126dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tituloCalcConv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Calculadora de Conversão"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_CalcDesc"
+        android:layout_width="293dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:text="Cacular Desconto"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Calc"
+        app:layout_constraintStart_toStartOf="@+id/btn_Calc"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Calc" />
+
+    <Button
+        android:id="@+id/btn_FahCel"
+        android:layout_width="290dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:text="fahrenheit em celsius"
+        app:layout_constraintEnd_toEndOf="@+id/btn_CalcDesc"
+        app:layout_constraintStart_toStartOf="@+id/btn_CalcDesc"
+        app:layout_constraintTop_toBottomOf="@+id/btn_CalcDesc" />
+
+    <Button
+        android:id="@+id/btn_CelFah"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="celsius em fahrenheit"
+        app:layout_constraintEnd_toEndOf="@+id/btn_FahCel"
+        app:layout_constraintStart_toStartOf="@+id/btn_FahCel"
+        app:layout_constraintTop_toBottomOf="@+id/btn_FahCel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
